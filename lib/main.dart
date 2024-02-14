@@ -1,3 +1,6 @@
+
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:photo_editor_sdk/photo_editor_sdk.dart';
 
@@ -63,6 +66,9 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           final result = await PESDK.openEditor(image: "assets/image.jpg");
+          var file = File(result!.image);
+          print('Exists ${await file.exists()}');
+          print('Exists sync ${file.existsSync()}');
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),

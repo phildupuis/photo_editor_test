@@ -84,7 +84,7 @@ packages:
     source: sdk
     version: "0.0.0"
   imgly_sdk:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: imgly_sdk
       sha256: "18e3a7c6b5a842d849317f116e9870ce670a55453a5629fa2459d68c8e5f0305"

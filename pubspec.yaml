@@ -16,6 +16,7 @@ dependencies:
 
   photo_editor_sdk: ^3.0.0
   video_editor_sdk: ^3.0.0
+  imgly_sdk: ^3.0.0
 
   local_auth: ^2.1.8
 
